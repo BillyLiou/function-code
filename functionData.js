@@ -8,16 +8,12 @@
 // }
 
 var str1 = 'abcddddeeeee'
-
-
 function sliceData(checkData) {
-    
     function t(n) {
         let a = checkData.slice(0, n)
         checkData = checkData.slice(n, checkData.length)
         return a
     }
-
     return {
         STX : t(1), //0
         Trans_Type : t(2), //1
@@ -60,6 +56,7 @@ function sliceData(checkData) {
 console.log(sliceData(str1).Trans_Type)
 console.log(sliceData(str1).Host_ID)
 console.log(sliceData(str1).Receipt_No)
+console.log('~~~dundundund')
 
 // sliceData(testStr);
 // console.log(sliceData(str).Trans_Type);
